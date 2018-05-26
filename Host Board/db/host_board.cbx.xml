@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="host_board">
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_0" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_4" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_p_buffer_dma:p_buffer_dma|scfifo:Image_Buffer" CBX_FILE_NAME="scfifo_70a1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_v_decoder:v_decoder|altera_up_video_dual_clock_fifo:Video_In_Dual_Clock_FIFO|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_h2l1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:pan_servo|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_kem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_1" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:pan_servo|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_u7m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:pan_servo|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_5ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:pan_servo|lpm_mult:Mult1" CBX_FILE_NAME="mult_oat.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_2" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_dual_clock_fifo:dual_clock_fifo|dcfifo:Data_FIFO" CBX_FILE_NAME="dcfifo_5oj1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_p_scaler:p_scaler|altera_up_video_scaler_multiply_height:Multiply_Height|scfifo:Multiply_Height_FIFO" CBX_FILE_NAME="scfifo_qd31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:tilt_servo|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_kem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|nios_system:threedlizer|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_3" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:tilt_servo|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_5ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|host_board|servo_pwm:tilt_servo|lpm_mult:Mult1" CBX_FILE_NAME="mult_oat.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

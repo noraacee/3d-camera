@@ -1,0 +1,6 @@
+
+State Machine - |red_board|nios_system:nios_II|nios_system_v_clipper:v_clipper|altera_up_video_clipper_drop:Clipper_Drop|s_video_clipper_drop
+Name s_video_clipper_drop.STATE_0_WAIT_FOR_START s_video_clipper_drop.STATE_2_ADD_MISSING_PART s_video_clipper_drop.STATE_1_RUN_CLIPPER 
+s_video_clipper_drop.STATE_0_WAIT_FOR_START 0 0 0 
+s_video_clipper_drop.STATE_1_RUN_CLIPPER 1 0 1 
+s_video_clipper_drop.STATE_2_ADD_MISSING_PART 1 1 0 

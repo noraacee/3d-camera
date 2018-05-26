@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element $${FILENAME}
+   {
+   }
+   element v_dma_controller.avalon_dma_control_slave
+   {
+      datum baseAddress
+      {
+         value = "17456";
+         type = "String";
+      }
+   }
+   element p_buffer.avalon_sram_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element chroma_resampler
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clock_50
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element clocks
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element color_space_converter
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element p_buffer
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element red_extractor
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element v_clipper
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element v_decoder
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element v_dma_controller
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element v_rgb_resampler
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element v_scaler
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="EP2C35F672C6" />
+ <parameter name="deviceFamily" value="Cyclone II" />
+ <parameter name="deviceSpeedGrade" value="6" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="RedBoard.qpf" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="1" />
+ <parameter name="timeStamp" value="1428532413830" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="clock_50" internal="clock_50.clk_in" type="clock" dir="end" />
+ <interface
+   name="reset_50"
+   internal="clock_50.clk_in_reset"
+   type="reset"
+   dir="end" />
+ <interface name="sdram_clk" internal="clocks.sdram_clk" />
+ <interface name="audio_clk" internal="clocks.audio_clk" />
+ <interface
+   name="video_decoder"
+   internal="v_decoder.external_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="sram"
+   internal="p_buffer.external_interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="red_extractor"
+   internal="red_extractor.conduit_end"
+   type="conduit"
+   dir="end" />
+ <module kind="clock_source" version="13.0" enabled="1" name="clock_50">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module kind="altera_up_clocks" version="13.0" enabled="1" name="clocks">
+  <parameter name="board" value="DE2" />
+  <parameter name="sys_clk_freq" value="50" />
+  <parameter name="sdram_clk" value="false" />
+  <parameter name="vga_clk" value="true" />
+  <parameter name="audio_clk" value="false" />
+  <parameter name="audio_clk_freq" value="12.288" />
+  <parameter name="AUTO_CLK_IN_PRIMARY_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_decoder"
+   version="13.0"
+   enabled="1"
+   name="v_decoder">
+  <parameter name="video_source">On-board Video In (NTSC or PAL)</parameter>
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_chroma_resampler"
+   version="13.0"
+   enabled="1"
+   name="chroma_resampler">
+  <parameter name="input_type" value="YCrCb 422" />
+  <parameter name="output_type" value="YCrCb 444" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_csc"
+   version="13.0"
+   enabled="1"
+   name="color_space_converter">
+  <parameter name="csc_type">444 YCrCb to 24-bit RGB</parameter>
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_rgb_resampler"
+   version="13.0"
+   enabled="1"
+   name="v_rgb_resampler">
+  <parameter name="input_type" value="24-bit RGB" />
+  <parameter name="output_type" value="16-bit RGB" />
+  <parameter name="alpha" value="1023" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_clipper"
+   version="13.0"
+   enabled="1"
+   name="v_clipper">
+  <parameter name="width_in" value="720" />
+  <parameter name="height_in" value="244" />
+  <parameter name="drop_left" value="40" />
+  <parameter name="drop_right" value="40" />
+  <parameter name="drop_top" value="2" />
+  <parameter name="drop_bottom" value="2" />
+  <parameter name="add_left" value="0" />
+  <parameter name="add_right" value="0" />
+  <parameter name="add_top" value="0" />
+  <parameter name="add_bottom" value="0" />
+  <parameter name="add_value_plane_1" value="0" />
+  <parameter name="add_value_plane_2" value="0" />
+  <parameter name="add_value_plane_3" value="0" />
+  <parameter name="add_value_plane_4" value="0" />
+  <parameter name="color_bits" value="16" />
+  <parameter name="color_planes" value="1" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_scaler"
+   version="13.0"
+   enabled="1"
+   name="v_scaler">
+  <parameter name="width_scaling" value="0.5" />
+  <parameter name="height_scaling" value="1" />
+  <parameter name="width_in" value="640" />
+  <parameter name="height_in" value="240" />
+  <parameter name="color_bits" value="16" />
+  <parameter name="color_planes" value="1" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_video_dma_controller"
+   version="13.0"
+   enabled="1"
+   name="v_dma_controller">
+  <parameter name="mode">From Stream to Memory</parameter>
+  <parameter name="addr_mode" value="Consecutive" />
+  <parameter name="start_address" value="0" />
+  <parameter name="back_start_address" value="0" />
+  <parameter name="width" value="320" />
+  <parameter name="height" value="240" />
+  <parameter name="color_bits" value="16" />
+  <parameter name="color_planes" value="1" />
+  <parameter name="dma_enabled" value="true" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module
+   kind="altera_up_avalon_sram"
+   version="13.0"
+   enabled="1"
+   name="p_buffer">
+  <parameter name="board" value="DE2" />
+  <parameter name="pixel_buffer" value="true" />
+  <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
+ </module>
+ <module kind="red_extractor" version="1.0" enabled="1" name="red_extractor">
+  <parameter name="pixel_buffer_base" value="0" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
+ </module>
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clock_50.clk"
+   end="clocks.clk_in_primary" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="clocks.clk_in_primary_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="v_decoder.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="chroma_resampler.clock_reset_reset" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="v_decoder.avalon_decoder_source"
+   end="chroma_resampler.avalon_chroma_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="chroma_resampler.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="color_space_converter.clock_reset_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="color_space_converter.clock_reset" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="chroma_resampler.avalon_chroma_source"
+   end="color_space_converter.avalon_csc_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="color_space_converter.avalon_csc_source"
+   end="v_rgb_resampler.avalon_rgb_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="v_rgb_resampler.avalon_rgb_source"
+   end="v_clipper.avalon_clipper_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="v_clipper.avalon_clipper_source"
+   end="v_scaler.avalon_scaler_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="v_scaler.avalon_scaler_source"
+   end="v_dma_controller.avalon_dma_sink" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="v_rgb_resampler.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="v_rgb_resampler.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="v_clipper.clock_reset_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="v_clipper.clock_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="v_scaler.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="v_scaler.clock_reset_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="v_dma_controller.clock_reset_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="v_dma_controller.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="p_buffer.clock_reset_reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="p_buffer.clock_reset" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="v_decoder.clock_reset_reset" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="v_dma_controller.avalon_dma_master"
+   end="p_buffer.avalon_sram_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clock_50.clk_reset"
+   end="red_extractor.reset" />
+ <connection
+   kind="clock"
+   version="13.0"
+   start="clocks.sys_clk"
+   end="red_extractor.clock" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="red_extractor.avalon_master_r"
+   end="p_buffer.avalon_sram_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

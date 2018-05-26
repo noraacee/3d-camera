@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_27'
+Slack : -2.471
+TNS   : -226.169
+
+Type  : Slow Model Setup 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 12.283
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_27'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 8.561
+TNS   : 0.000
+
+Type  : Slow Model Removal 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 1.738
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_27'
+Slack : -1.880
+TNS   : -303.820
+
+Type  : Slow Model Minimum Pulse Width 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 7.873
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_27'
+Slack : -1.460
+TNS   : -66.264
+
+Type  : Fast Model Setup 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 16.404
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_27'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 9.220
+TNS   : 0.000
+
+Type  : Fast Model Removal 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 0.920
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_27'
+Slack : -1.880
+TNS   : -303.820
+
+Type  : Fast Model Minimum Pulse Width 'nios_II|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 7.873
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 10.000
+TNS   : 0.000
+
+------------------------------------------------------------

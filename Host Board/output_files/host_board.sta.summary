@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -19.951
+TNS   : -39.428
+
+Type  : Slow Model Setup 'CLOCK_27'
+Slack : -2.816
+TNS   : -240.512
+
+Type  : Slow Model Setup 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 11.948
+TNS   : 0.000
+
+Type  : Slow Model Setup 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 33.905
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : -1.599
+TNS   : -36.538
+
+Type  : Slow Model Hold 'CLOCK_27'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 8.555
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 18.315
+TNS   : 0.000
+
+Type  : Slow Model Removal 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 2.914
+TNS   : 0.000
+
+Type  : Slow Model Removal 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 21.429
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_27'
+Slack : -1.880
+TNS   : -303.820
+
+Type  : Slow Model Minimum Pulse Width 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 7.873
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.000
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 17.873
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_27'
+Slack : -1.460
+TNS   : -74.076
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : 3.191
+TNS   : 0.000
+
+Type  : Fast Model Setup 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 16.380
+TNS   : 0.000
+
+Type  : Fast Model Setup 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 36.684
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -1.246
+TNS   : -35.704
+
+Type  : Fast Model Hold 'CLOCK_27'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 9.216
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 19.106
+TNS   : 0.000
+
+Type  : Fast Model Removal 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 1.476
+TNS   : 0.000
+
+Type  : Fast Model Removal 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 20.759
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_27'
+Slack : -1.880
+TNS   : -303.820
+
+Type  : Fast Model Minimum Pulse Width 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[0]'
+Slack : 7.873
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.000
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'threedlizer|clocks|DE_Clock_Generator_System|pll|clk[2]'
+Slack : 17.873
+TNS   : 0.000
+
+------------------------------------------------------------

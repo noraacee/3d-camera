@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="red_board">
+		<CBX_INST_ENTRY INSTANCE_NAME="|red_board|nios_system:nios_II|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_1" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|red_board|nios_system:nios_II|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_3" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|red_board|nios_system:nios_II|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_0" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|red_board|nios_system:nios_II|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_2" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|red_board|nios_system:nios_II|nios_system_color_space_converter:color_space_converter|altera_up_YCrCb_to_RGB_converter:YCrCb_to_RGB|lpm_mult:lpm_mult_component_4" CBX_FILE_NAME="mult_rpq.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|red_board|nios_system:nios_II|nios_system_v_decoder:v_decoder|altera_up_video_dual_clock_fifo:Video_In_Dual_Clock_FIFO|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_h2l1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

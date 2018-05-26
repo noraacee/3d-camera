@@ -1,0 +1,28 @@
+	component nios_system is
+		port (
+			clock_50_clk                : in    std_logic                     := 'X';             -- clk
+			reset_50_reset_n            : in    std_logic                     := 'X';             -- reset_n
+			video_decoder_TD_CLK27      : in    std_logic                     := 'X';             -- TD_CLK27
+			video_decoder_TD_DATA       : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- TD_DATA
+			video_decoder_TD_HS         : in    std_logic                     := 'X';             -- TD_HS
+			video_decoder_TD_VS         : in    std_logic                     := 'X';             -- TD_VS
+			video_decoder_clk27_reset   : in    std_logic                     := 'X';             -- clk27_reset
+			video_decoder_TD_RESET      : out   std_logic;                                        -- TD_RESET
+			video_decoder_overflow_flag : out   std_logic;                                        -- overflow_flag
+			sram_DQ                     : inout std_logic_vector(15 downto 0) := (others => 'X'); -- DQ
+			sram_ADDR                   : out   std_logic_vector(17 downto 0);                    -- ADDR
+			sram_LB_N                   : out   std_logic;                                        -- LB_N
+			sram_UB_N                   : out   std_logic;                                        -- UB_N
+			sram_CE_N                   : out   std_logic;                                        -- CE_N
+			sram_OE_N                   : out   std_logic;                                        -- OE_N
+			sram_WE_N                   : out   std_logic;                                        -- WE_N
+			red_extractor_pixel_r_ready : out   std_logic;                                        -- pixel_r_ready
+			red_extractor_pixel_r       : out   std_logic_vector(4 downto 0);                     -- pixel_r
+			red_extractor_pixel_offset  : out   std_logic_vector(17 downto 0);                    -- pixel_offset
+			red_extractor_reset_in      : in    std_logic                     := 'X';             -- reset_in
+			red_extractor_red_led       : out   std_logic_vector(17 downto 0);                    -- red_led
+			red_extractor_pixel_r_done  : in    std_logic                     := 'X';             -- pixel_r_done
+			red_extractor_clk_in        : in    std_logic                     := 'X'              -- clk_in
+		);
+	end component nios_system;
+
